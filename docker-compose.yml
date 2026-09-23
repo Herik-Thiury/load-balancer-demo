@@ -1,0 +1,26 @@
+services:
+  app-01:
+    build: .
+    environment:
+      - INSTANCE_ID=app-01
+
+  app-02:
+    build: .
+    environment:
+      - INSTANCE_ID=app-02
+
+  app-03:
+    build: .
+    environment:
+      - INSTANCE_ID=app-03
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app-01
+      - app-02
+      - app-03
