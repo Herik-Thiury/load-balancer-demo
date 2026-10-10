@@ -141,4 +141,4 @@ As instâncias não expõem porta para o host — apenas o NGINX. Portanto não 
 
 ## Autor
 
-Hérik Thiury Silva de Lima — Análise e Desenvolvimento de Sistemas, IFPE Campus Jaboatão dos Guararapes.
+Hérik Thiury Silva de Lima e Igor Luiz Gomes Pedrosa — Análise e Desenvolvimento de Sistemas, IFPE Campus Jaboatão dos Guararapes.
